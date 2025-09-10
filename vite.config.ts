@@ -9,15 +9,14 @@ export default defineConfig({
     tailwindcss() 
   ],
   server: {
-    allowedHosts: ['.ngrok-free.app', 'localhost']
-  },
-  optimizeDeps: {
-    include: ["@react-pdf/renderer"],
-  },
-  server: {
+    allowedHosts: ['.ngrok-free.app', 'localhost'],
     proxy: {
       '/auth': 'https://assessa-api-slew.onrender.com',
     },
+
+  },
+  optimizeDeps: {
+    include: ["@react-pdf/renderer"],
   },
 
 })
