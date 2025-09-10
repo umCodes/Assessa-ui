@@ -1,10 +1,10 @@
 import { createContext, type Dispatch, type SetStateAction } from "react";
-import type { Quizes } from "../types/quiz";
+import type { Quiz } from "../types/quiz";
 
 
 type QuizesContextType = {
-    quizes: Quizes[] | null;
-    setQuizes: Dispatch<SetStateAction<Quizes[] | null>>;
+    quizes: Quiz[] | null;
+    setQuizes: Dispatch<SetStateAction<Quiz[] | null>>;
     isLoading:boolean;
     setIsLoading: Dispatch<SetStateAction<boolean>>;
     page: number;
