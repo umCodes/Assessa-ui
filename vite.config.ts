@@ -14,6 +14,11 @@ export default defineConfig({
   optimizeDeps: {
     include: ["@react-pdf/renderer"],
   },
+  server: {
+    proxy: {
+      '/auth': 'https://assessa-api-slew.onrender.com',
+    },
+  },
 
 })
 
